@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://8.142.83.53:9000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>请假外出、返校权限查询通行码</title>
+	<link rel="stylesheet" href="./test/bootstrap.min.css">
+	<script src="./test/jquery.min.js.下载"></script>
+	<script src="./test/popper.min.js.下载"></script>
+	<script src="./test/bootstrap.min.js.下载"></script>
+</head>
+
+<body style="margin: 0px;">
+	<div id="demo" class="collapse" style="position: fixed;top: 0;width: 100%;background-color: white;">
+		<form id="myform">
+			<div class="form-group">
+				<label for="xingming">
+				    <p style="font-size: 2vh;">姓名</p>
+			    </label>
+				<select class="form-control" id="xingming" style="height: 5vh;font-size: 2vh;">
+					<option>顾恺琦</option>
+					<option>张圣凡</option>
+					<option>田智予</option>
+<!--
+					<option>张晋</option>
+					<option>朱奎</option>
+-->
+	
+				</select>
+				<label for="xuehao">
+				    <p style="font-size: 2vh;">学号</p>
+			    </label>
+				<select class="form-control" id="xuehao" style="height: 5vh;font-size: 2vh;">
+					<option>2019110805</option>
+					<option>2019110804</option>
+					<option>2019110803</option>
+				</select>
+				<label for="churuxiao">
+					<p style="font-size: 2vh;">出/入校</p>
+				</label>
+				<select class="form-control" id="churuxiao" style="height: 5vh;font-size: 2vh;">
+					<option>允许入校</option>
+					<option>允许出校</option>
+				</select>
+				<label for="churuxiao">
+					<p style="font-size: 2vh;">照片</p>
+				</label>
+				<select class="form-photo" id="tupian" style="height: 5vh;font-size: 2vh;">
+					<option>./test/image/gu.jpg</option>
+					<option>./test/image/fan.jpg</option>
+					<option>./test/image/tian.jpg</option>
+				</select>
+			</div>
+
+		</form>
+		<button id="queding" data-toggle="collapse" data-target="#demo" class="btn btn-primary" style="height: 8vh;width: 100%;margin-top: 2vh;">
+			<p style="font-size: 3vh;">确定</p>
+		</button>
+
+	</div>
+	<div style="height: 1.3vh; background-color: rgba(237, 237, 237, 1);"></div>
+	<div class="zuishangmian">
+		<div style="height: 1.5vh;"></div>
+		<img src="./test/liucheng.svg" alt="" style="float: left;width: 4%;margin-left: 20px;margin-right: 10px;">
+		<p style="font-size: 1.8vh;font-family: PingFang SC;font-weight: bold;color: #333;">当前部门：现代邮政学院（自动化学院）
+		</p>
+	</div>
+	<div style="height: 1.3vh; background-color: rgba(237, 237, 237, 1);"></div>
+	<div class="zuishangmian">
+		<div style="height: 1.5vh;"></div>
+		<img src="./test/biaodanyemian.svg" alt="" style="float: left;width: 4%;margin-left: 20px;margin-right: 10px;">
+		<p style="font-size: 1.8vh;font-family: PingFang SC;font-weight: bold;color: #333;">
+			请假外出、返校权限查询</p>
+	</div>
+	<div style="height: 1.3vh; background-color: rgba(237, 237, 237, 1);"></div>
+
+	<div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">姓名</span>
+	</div>
+	<div class="stuInfo"><span id="xingming1" style="font-size: 2.3vh; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 110px; letter-spacing: 0px;">
+			顾恺琦
+		</span></div>
+	
+	<div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">照片</span>
+	</div>
+	<div class="stuInfo" style="height: 18vh;">
+		<div style="height: 1.5vh;"></div><img src="./test/image/gu.jpg" id="picturename" alt="" style="width: 30%;height: 80%;margin: auto;">
+	</div>
+	<div class="stuInfoTitle" style="height: 2vh;"></div>
+	<div class="stuInfo" style="height: 8vh;">
+		<div style="height: 2vh;"></div><img src="./test/3916676.gif" alt="" style="width: 90%;height: 60%;margin: auto;">
+	</div>
+	<div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">状态码</span>
+	</div>
+	<div class="stuInfo" style="height: 30vh;">
+		<div style="height: 2vh;"></div><img src="./test/qrcode.png" alt="" style="width: 40%;;margin: auto;">
+	</div>
+	 <div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">状态</span>
+	</div> 
+	<div class="stuInfo"><span id="churuxiao1" style="font-size: 2.5vh; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: green; text-decoration: none; text-align: center; line-height: 110px; letter-spacing: 0px;">
+			允许入校
+		</span></div>
+	<div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">学工号</span>
+	</div>
+	<div class="stuInfo"><span id="xuehao1" style="font-size: 2.3vh; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 110px; letter-spacing: 0px;">
+			2020110792
+		</span></div>
+	<div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">出入校时间</span>
+	</div>
+	<div class="stuInfo"><span id="shijian" style="font-size: 2.3vh; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 110px; letter-spacing: 0px;">2021-11-22 12:19:33</span></div>
+	<div class="stuInfoTitle"><span style="color: rgb(135, 135, 135);font-size: 2.3vh;font-family: 微软雅黑;line-height: 110px;margin: 30px;">学院</span>
+	</div>
+	<div class="stuInfo"><span style="font-size: 2.3vh; font-family: 微软雅黑; font-weight: normal; font-style: normal; color: rgb(96, 98, 102); text-decoration: none; text-align: center; line-height: 110px; letter-spacing: 0px;">
+			现代邮政学院（自动化学院）
+		</span></div> 
+	<div style="width: 100%;height: 10vh;background-color: rgba(237, 237, 237, 1);">
+		<!-- <div style="height: 1.5vh;"></div>
+		<div id="more">更多</div> -->
+	</div>
+	<div style="width: 100%;height: 10vh;position: fixed;bottom: 0;background-color: white;">
+		<div style="height: 1.5vh;"></div>
+		<div id="more" data-toggle="collapse" data-target="#demo">更多</div>
+	</div>
+	<script type="text/javascript">
+		document.getElementById("queding").addEventListener("click", onClick);
+		var obj = document.getElementById("tupian");
+		function onClick() {
+			console.log('xxxxxxxxxxxxxxxxxxxxxxxxx');
+			console.log($("#xingming").val())
+			console.log($("#xuehao").val())
+			console.log($("#churuxiao").val());
+			console.log($("#tupian").val());
+			document.getElementById("xingming1").innerHTML=$("#xingming").val();
+			document.getElementById("xuehao1").innerHTML=$("#xuehao").val();
+			document.getElementById("churuxiao1").innerHTML=$("#churuxiao").val();
+			document.getElementById('picturename').src=obj.options[obj.selectedIndex].value;
+
+
+		};
+		// function onClick() {
+		// 	var churuxiao = document.getElementById("churuxiao");
+		// 	if (churuxiao.innerHTML == '允许入校') {
+		// 		churuxiao.innerHTML = '允许出校';
+		// 	} else {
+		// 		churuxiao.innerHTML = '允许入校';
+
+		// 	}
+		// }
+		// document.getElementById("more").addEventListener("click", onClick);
+		Date.prototype.format = function (fmt) {
+			var o = {
+				"M+": this.getMonth() + 1,                 //月份
+				"d+": this.getDate(),                    //日
+				"h+": this.getHours(),                   //小时
+				"m+": this.getMinutes(),                 //分
+				"s+": this.getSeconds(),                 //秒
+				"q+": Math.floor((this.getMonth() + 3) / 3), //季度
+				"S": this.getMilliseconds()             //毫秒
+			};
+
+			if (/(y+)/.test(fmt)) {
+				fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+			}
+
+			for (var k in o) {
+				if (new RegExp("(" + k + ")").test(fmt)) {
+					fmt = fmt.replace(
+						RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+				}
+			}
+
+			return fmt;
+		};
+		document.getElementById("shijian").innerHTML = new Date().format("yyyy-MM-dd hh:mm:ss");
+		// window.onload = function () {
+		// 	var x = document.getElementById("more");
+		// 	x.addEventListener("click", onClick);
+		// };
+
+	</script>
+
+
+
+
+
+<style type="text/css">
+	.stuInfoTitle {
+		background-color: rgba(47, 99, 164, 0.05);
+		height: 5.9vh;
+	}
+
+	.stuInfo {
+		height: 6.4vh;
+		text-align: center;
+	}
+
+	.zuishangmian {
+		height: 6vh;
+	}
+
+	#more {
+		width: 16vh;
+		height: 6vh;
+		border-radius: 60px;
+		border: 2px solid #4285f4;
+		margin-left: 20px;
+		text-align: center;
+		font-size: 2.6vh;
+		color: #4285f4;
+		line-height: 6vh;
+	}
+</style></body></html>
